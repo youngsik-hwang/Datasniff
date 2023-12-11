@@ -12,7 +12,7 @@ namespace Datasniff
         public static string ConnectStr()
         {
             return string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4};"
-                         , "svc.gksl2.cloudtype.app", "32666", "manner", "root", "JMint00!@#");
+                                         , "localhost", "3306", "manner", "root", "hhhsql");
         }
     }
 }
