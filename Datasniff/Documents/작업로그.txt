@@ -1,0 +1,28 @@
+
+작업일지 datasniff
+
+1. 회원가입 폼(CreateAccount)
+	1) 마리아 DB 연결 테스트 - 완료
+	2) member 테이블에 저장 테스트 - 완료
+	3) vaiid 체크 
+		1) 필수항목(아이디, 패스워드, 사업자등록번호, 사업장 이름) null 체크 - 완료
+		2) 아이디 중복 체크
+		2) 패스워드, 패스워드 확인 일치체크 - 완료
+		3) 사업자등록번호 무결성 체크
+			1) 자리수 체크 (000-00-00000)
+			2) 중복 체크
+			3) 숫자만 가능하도록 
+		4) 아이디 무결성 체크
+			1) 입력문자 체크(영문자와 숫자만 가능하게)
+			
+2. Mmeber Class	
+			
+
+3. MySql Data 핸들링
+
+	1) DataAdapter 사용예
+    connection.Open();
+    sqlquery = string.Format("SELECT * FROM member WHERE id ='{0}'", id);
+    MySqlDataAdapter da = new MySqlDataAdapter(sqlquery, connection);
+    da.Fill(ds);    
+                    
